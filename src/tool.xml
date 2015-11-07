@@ -1,6 +1,0 @@
-<tool id="sam2bed" title="SAM to BED" group="Format conversion">
-    <command>hadoop jar ${STREAMING_JAR} -Dmapred.reduce.tasks=0 -files sam2bed.pl -input ${in} -output ${out} -mapper "perl sam2bed.pl"</command>
-<param>        <input format="sam" id="in" label="Input"/>
-        <output format="bed" id="out" label="Output"/>
-</param></tool>
-
